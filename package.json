@@ -1,0 +1,14 @@
+{
+  "name": "code-archaeologist",
+  "version": "1.0.0",
+  "description": "Multi-agent system for automated bug diagnosis and repair",
+  "type": "module",
+  "scripts": {
+    "analyst": "node server/agents/repositoryAnalyst.js"
+  },
+  "dependencies": {
+    "@langchain/langgraph": "^1.4.17",
+    "@langchain/core": "^1.1.48",
+    "@langchain/google-genai": "^2.3.0"
+  }
+}
