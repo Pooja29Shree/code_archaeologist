@@ -4,7 +4,8 @@
   "description": "Multi-agent system for automated bug diagnosis and repair",
   "type": "module",
   "scripts": {
-    "analyst": "node server/agents/repositoryAnalyst.js"
+    "analyst": "node server/agents/repositoryAnalyst.js",
+    "diagnosis:test": "node --test tests/diagnosisAgent.test.js"
   },
   "dependencies": {
     "@langchain/langgraph": "^1.4.17",

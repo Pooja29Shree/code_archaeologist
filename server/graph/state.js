@@ -25,6 +25,12 @@ const CodeArchaeologistState = Annotation.Root({
     default: () => null,
   }),
 
+  // ── Diagnosis Agent output ────────────────────────────────
+  diagnosis: Annotation({
+    reducer: (_prev, next) => next,
+    default: () => null,
+  }),
+
   // ── Workflow metadata ─────────────────────────────────────
   iteration: Annotation({
     reducer: (_prev, next) => next,
