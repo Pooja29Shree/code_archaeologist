@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "analyst": "node server/agents/repositoryAnalyst.js",
-    "diagnosis:test": "node --test tests/diagnosisAgent.test.js"
+    "diagnosis:test": "node --test tests/diagnosisAgent.test.js",
+    "fix:test": "node --test tests/fixAgent.test.js"
   },
   "dependencies": {
     "@langchain/langgraph": "^1.4.17",
