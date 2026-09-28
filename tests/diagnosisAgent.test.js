@@ -55,7 +55,7 @@ const fakeLlm = {
 test("code tools locate the seeded boundary-condition bug", async () => {
   const matches = await searchCode(repositoryPath, "quantity > 10");
   assert.equal(matches.length, 2);
-  assert.equal(matches[0].file, "src\\pricing\\discount.py");
+  assert.equal(matches[0].file, "src/pricing/discount.py");
 
   const functions = await findFunction(repositoryPath, "calculate_discount");
   assert.equal(functions.length, 1);
