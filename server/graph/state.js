@@ -37,6 +37,12 @@ const CodeArchaeologistState = Annotation.Root({
     default: () => null,
   }),
 
+  // ── QA Agent output ───────────────────────────────────────
+  test_results: Annotation({
+    reducer: (_prev, next) => next,
+    default: () => null,
+  }),
+
   // ── Workflow metadata ─────────────────────────────────────
   iteration: Annotation({
     reducer: (_prev, next) => next,
