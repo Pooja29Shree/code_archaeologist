@@ -1,4 +1,3 @@
-import fs from "fs/promises";
 import path from "path";
 import {
   isSourceFile,
@@ -22,7 +21,11 @@ function repositoryFile(repositoryPath, relativePath) {
 }
 
 function lineResult(relativePath, lineNumber, text) {
-  return { file: relativePath, line: lineNumber, text: text.trim() };
+  return {
+    file: relativePath.split(path.sep).join("/"),
+    line: lineNumber,
+    text: text.trim(),
+  };
 }
 
 /** Search source files for a literal string or regular expression. */
