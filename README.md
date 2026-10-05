@@ -37,7 +37,7 @@ The shared LangGraph state carries each stage's result. If QA fails, the workflo
 | QA Agent | Test the proposed repair | Passed tests, failures, regressions, and feedback |
 | Review Agent | Validate the complete repair and coordinate retries | Verification status and routing decision |
 
-## Project Structure
+## Project Struct
 
 ```text
 server/
